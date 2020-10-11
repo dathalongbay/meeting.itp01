@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        /* css cho thẻ cha */
+        #parent1 {
+            width: 400px;
+            height: 400px;
+            background-color: yellow;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        /* css cho thẻ con */
+        #child1 {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+
+        #child2 {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+
+        #child3 {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+        }
+
+        #child4 {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            top: 100px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <pre>
+        trường hợp 2 của absolute
+        thẻ cha có postion là relative chứa thẻ con có position là absolute 
+        thì thẻ con position:absolute; lấy tọa của thẻ mẹ làm gốc tọa độ 
+    </pre>
+    
+
+    <div id="parent1">
+        <div id="child1">
+            thẻ con 1
+        </div>
+
+        <div id="child2">
+            thẻ con 2
+        </div>
+
+        <div id="child3">
+            thẻ con 3
+        </div>
+
+        <div id="child4">
+            thẻ con 4
+        </div>
+    </div>
+</body>
+</html>
